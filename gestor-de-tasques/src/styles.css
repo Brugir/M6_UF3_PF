@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Tema clar */
+body.light {
+  background-color: #f4f4f9; /* Fons clar general */
+  color: #333; /* Text negre */
+}
+
+/* Tema fosc */
+body.dark {
+  background-color: #1f2937; /* Fons fosc general */
+  color: #f4f4f9; /* Text blanc */
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.sidebar h2 {
+  margin-top: 0;
+}
+
+.sidebar input, .sidebar button {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar input {
+  border: 1px solid #ccc;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 0.5rem;
+  background-color: #e5e7eb; /* Fons clar de les llistes */
+  margin: 0.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+li.completed span {
+  text-decoration: line-through;
+  color: gray;
+}
+
+button {
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.actions button {
+  margin-left: 0.5rem;
+}
+
+#themeToggleBtn {
+  margin-top: 10px;
+  align-self: flex-end;
+  justify-self: flex-end;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Adaptacions per al tema fosc */
+body.dark .card {
+  background-color: #374151;
+  color: #f4f4f9;
+}
+
+body.dark .sidebar {
+  background-color: #222222; /* Fons fosc per al menú lateral */
+  color: white;
+  border: 1px solid #444444; /* Borde subtil */
+}
+
+body.dark li {
+  background-color: #4b5563; /* Fons fosc per a elements de llista */
+  color: #f4f4f9; /* Text blanc */
+}
+
+body.dark input, body.dark button {
+  background-color: #6b7280; /* Fons d'inputs i botons */
+  color: white;
+  border: none;
+}
+
+body.dark li:hover {
+  background-color: #555555; /* Fons més clar quan passes el cursor */
+}
+
+body.dark .actions button {
+  background-color: #555555;
+}
+
+body.dark ul {
+  background-color: #222222; /* Fons fosc de la llista */
+  border-radius: 5px;
+}
+
+body.dark ul li.completed span {
+  color: #888888; /* Tasques completades en gris */
+}
+
+body.dark #taskList li:hover {
+  background-color: #444444; /* Canvia el fons al passar el cursor */
+}
