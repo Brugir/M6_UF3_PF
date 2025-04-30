@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Brugir/M6_Projecte_UF1/static/css/main.eba0886d.css",
+    "main.js": "/Brugir/M6_Projecte_UF1/static/js/main.15502067.js",
+    "index.html": "/Brugir/M6_Projecte_UF1/index.html",
+    "main.eba0886d.css.map": "/Brugir/M6_Projecte_UF1/static/css/main.eba0886d.css.map",
+    "main.15502067.js.map": "/Brugir/M6_Projecte_UF1/static/js/main.15502067.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eba0886d.css",
+    "static/js/main.15502067.js"
+  ]
+}
