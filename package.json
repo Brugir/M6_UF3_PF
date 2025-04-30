@@ -2,7 +2,7 @@
   "name": "gestor-de-tasques",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/Brugir/M6_Projecte_UF1",
+  "homepage": "https://brugir.github.io/M6_UF3_PF",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
